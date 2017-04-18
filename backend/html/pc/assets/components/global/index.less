@@ -1,0 +1,241 @@
+@import "./_themes.less";
+@import "./_quick.less";
+@import "./_base.less";
+@import "../antd/style/index.less";
+// 页面切换读条
+.loading-box {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    &-inner {
+        background-color: @primary-color;
+        width: 0px;
+        height: 3px;
+    }
+    &-loading {
+        .loading-box-inner {
+            animation: loading-box 2s;
+        }
+    }
+    &-complete {
+        .loading-box-inner {
+            animation: loading-complete 0.7s;
+        }
+    }
+}
+
+@keyframes loading-box {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes loading-complete {
+    0% {}
+    100% {
+        width: 100%;
+    }
+}
+
+#app {
+    min-width: 1340px;
+    position: relative;
+    .h-height;
+}
+
+.box-seach {
+    padding: 10px;
+}
+
+// 导航
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: -65px;
+    z-index: @zindex-affix;
+    a {
+        margin: 0 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.4);
+        &.active {
+            color: rgb(255, 255, 255);
+        }
+    }
+    &-right {
+        padding-right: 20px;
+        color: white;
+        float: right;
+    }
+}
+
+// 左右分割布局
+.main-content {
+    position: relative;
+    padding-top: 65px;
+    height: 100%;
+    .main-content-pr {
+        position: relative;
+        height: 100%;
+    }
+}
+
+.main-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 260px;
+    border-right: 1px solid @border-color-base;
+    .center-box {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        width: 100%;
+        padding: 0px 20px;
+        text-align: center;
+    }
+    &.skin-gray {
+        background-color: @background-color-base;
+    }
+    &-content {
+        position: absolute;
+        top: 48px;
+        bottom: 20px;
+        width: 100%;
+        .ant-tabs {
+            height: 100%;
+        }
+        .ant-tabs-content {
+            width: 100%;
+            position: absolute;
+            top: 48px;
+            left: 0px;
+            bottom: 0px;
+        }
+        .tabpane-content {
+            height: 100%;
+            padding: 0 10px;
+            overflow: auto;
+        }
+        dl {
+            border-top: 1px solid @border-color-base;
+            border-bottom: 1px solid @border-color-base;
+            margin-bottom: 10px;
+            line-height: 28px;
+            background-color: white;
+        }
+        dt {
+            padding: 0 25px;
+        }
+        dd {
+            cursor: pointer;
+            padding: 10px 25px;
+            border-top: 1px solid @border-color-base;
+        }
+    }
+    .ant-tabs-nav {
+        width: 100%;
+    }
+    .ant-tabs.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab {
+        width: 50%;
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+
+.main-right {
+    margin-left: 260px;
+    height: 100%;
+    &-content {
+        margin-top: -48px;
+        padding-top: 48px;
+        height: 100%;
+    }
+    &-content-box {
+        padding: 0 35px 20px 35px;
+        overflow: auto;
+        height: 100%;
+    }
+    .ant-tabs-nav-scroll {
+        margin-left: -1px;
+    }
+    &-title {
+        padding: 10px 20px;
+        line-height: 40px;
+        background-color: @background-color-base;
+        border-radius: 5px;
+        h3 {
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+    &-tabs {
+        position: relative;
+        z-index: 1;
+        height: 32px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid @border-color-base;
+        .main-right-tabs-left {
+            float: left;
+            .ant-btn {
+                margin-top: 1px;
+            }
+        }
+        .ant-tabs-nav-scroll {
+            margin-left: 0px;
+        }
+    }
+}
+
+.table-from {
+    width: 325px;
+    margin: 0 auto;
+    td {
+        padding: 3px;
+    }
+    &.table-from-sm {
+        width: 240px;
+    }
+}
+
+// 详情table
+.table-details {
+    width: 100%;
+    line-height: 38px;
+    th {
+        width: 130px;
+        text-align: right;
+        font-weight: 100;
+    }
+    td {
+        padding-left: 25px;
+    }
+}
+
+.ul-details {
+    padding-top: 30px;
+    padding-left: 35px;
+    line-height: 38px;
+}
+
+.popover-ul {
+    line-height: 30px;
+    li {
+        cursor: pointer;
+        &:hover {
+            background-color: @background-color-base;
+        }
+    }
+}
+
+.blue {
+    color: @link-color;
+}

@@ -1,0 +1,90 @@
+@import '_quick.less';
+.makePM(@Attribute, @class, @value: 5) when (@value <=50) {
+    .@{class}@{value} {
+        @{Attribute}: 0px + @value !important;
+    }
+    .@{class}l@{value} {
+        @{Attribute}-left: 0px + @value !important;
+    }
+    .@{class}r@{value} {
+        @{Attribute}-right: 0px + @value !important;
+    }
+    .@{class}t@{value} {
+        @{Attribute}-top: 0px + @value !important;
+    }
+    .@{class}b@{value} {
+        @{Attribute}-bottom: 0px + @value !important;
+    }
+    .makePM(@Attribute, @class, @value+5)
+}
+
+.makePM(margin, ~'m');
+.makePM(padding, ~'p');
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+//左悬浮
+.fl {
+    float: left;
+}
+
+//右悬浮
+.fr {
+    float: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.cf {
+    .cf-clearfix();
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.oa {
+    overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 8px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 8px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}

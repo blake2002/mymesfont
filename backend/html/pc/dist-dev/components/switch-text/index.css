@@ -1,0 +1,22 @@
+.cp-text-input {
+  width: 100%;
+  display: inline-block;
+  height: 28px;
+  vertical-align: middle;
+}
+.cp-text-input .cp-text-input-text {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 8px;
+  height: 28px;
+  overflow: hidden;
+}
+.cp-text-input .cp-text-input-text span {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+.cp-text-input-input {
+  display: inline-block;
+  width: 100%;
+}

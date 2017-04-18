@@ -1,0 +1,120 @@
+.page-deviceadd {
+  position: relative;
+}
+.page-deviceadd.dn {
+  display: none;
+}
+.page-deviceadd .device-add-title {
+  background-color: #f7f7f7;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+.page-deviceadd .device-add-content {
+  margin-left: -12px;
+  margin-top: 10px;
+}
+.page-deviceadd .device-add-content:before,
+.page-deviceadd .device-add-content:after {
+  content: " ";
+  display: table;
+}
+.page-deviceadd .device-add-content:after {
+  clear: both;
+}
+.page-deviceadd .device-add-box {
+  float: left;
+  width: 290px;
+  height: 220px;
+  padding: 15px 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+.page-deviceadd .device-add-box .table-from {
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+.page-deviceadd .device-add .comm-param {
+  float: left;
+  height: 220px;
+  position: relative;
+  padding: 15px 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+.page-deviceadd .device-add .comm-param:before,
+.page-deviceadd .device-add .comm-param:after {
+  content: " ";
+  display: table;
+}
+.page-deviceadd .device-add .comm-param:after {
+  clear: both;
+}
+.page-deviceadd .device-add .comm-param-title {
+  float: left;
+  font-size: 14px;
+  height: 100%;
+  margin-right: 70px;
+}
+.page-deviceadd .device-add .comm-param .ant-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.page-deviceadd .device-add .comm-param .table-from {
+  float: left;
+}
+.page-deviceadd .device-add .data-block {
+  float: left;
+  height: 406px;
+  margin-left: 12px;
+}
+.page-deviceadd .device-add .data-block .comm-param-title {
+  position: relative;
+}
+.page-deviceadd .device-add .data-block .comm-param-title .btn-del {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.device-modal {
+  width: 600px;
+}
+.device-modal-content {
+  position: relative;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.device-modal-title {
+  position: absolute;
+  font-size: 14px;
+  top: 15px;
+  left: 0px;
+}
+.drive-add {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.data-block-add {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.data-block-add-title {
+  position: absolute;
+  font-size: 14px;
+  top: 15px;
+  left: 0px;
+}
+.edit-table td {
+  max-width: 200px;
+}
+.modal-Content {
+  max-height: 500px;
+  overflow: auto;
+}

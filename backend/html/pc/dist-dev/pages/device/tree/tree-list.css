@@ -1,0 +1,51 @@
+.page-device-tree .treeIcon {
+  margin: auto;
+  margin-right: 0px;
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+.page-device-tree .treeInput {
+  border: none;
+  height: 19.6px;
+}
+.page-device-tree li {
+  position: relative;
+}
+.page-device-tree li a.ant-tree-node-content-wrapper {
+  width: 85%;
+  height: 28px;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 28px;
+}
+.page-device-tree li span.ant-tree-switcher.ant-tree-noline_close,
+.page-device-tree li span.ant-tree-switcher.ant-tree-noline_open {
+  height: 28px;
+  line-height: 28px;
+}
+.page-device-tree .selectInput {
+  width: 100%;
+}
+.page-device-tree .selectInput .ant-select-selection__rendered {
+  height: 28px;
+  line-height: 28px;
+}
+.page-device-tree .selectInput .ant-select-selection__rendered ul {
+  padding: 0px;
+}
+.page-device-tree .selectInput .ant-select-selection__rendered ul li {
+  position: static;
+  margin: 0px;
+}
+.page-device-tree li span.ant-tree-title {
+  width: 100%;
+  display: inline-block;
+}
+.page-device-tree li span.ant-tree-title span {
+  display: -webkit-flex;
+}
+.page-device-tree .treeNodeDom {
+  width: 100%;
+  overflow: hidden;
+}

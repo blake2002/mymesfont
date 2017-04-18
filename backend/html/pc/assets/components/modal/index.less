@@ -1,0 +1,45 @@
+@import '../global/_themes.less';
+.component-slip {
+    position: fixed;
+    right: 0px;
+    top: 65px;
+    bottom: 0px;
+    width: 400px;
+    z-index: 1;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 10px @shadow-color;
+    overflow-y: auto;
+    display: none;
+    &.visible {
+        display: block;
+    }
+    &-title {
+        font-size: 16px;
+        height: 32px;
+        line-height: 31px;
+        text-align: center;
+        border-bottom: 1px solid @border-color-base;
+    }
+    &-close {
+        cursor: pointer;
+        float: right;
+        margin: 7px 7px 0 0;
+    }
+    &-content {
+        position: relative;
+        min-height: 100%;
+    }
+    &-footer {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-top: 1px solid @border-color-base;
+        padding: 5px;
+        text-align: right;
+        .ant-btn {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "react-redux-router-typescript",
+  "version": "1.0.0-dev",
+  "description": "模版项目",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclemake/react-redux-router-typescript.git"
+  },
+  "scripts": {
+    "postinstall": "gulp",
+    "start": "gulp",
+    "test": "node test",
+    "cnpm": "npm install --registry=https://registry.npm.taobao.org"
+  },
+  "author": "unclemake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unclemake/react-redux-router-typescript/issues"
+  },
+  "homepage": "https://github.com/unclemake/react-redux-router-typescript#readme",
+  "dependencies": {
+    "@types/react": "^0.14.43",
+    "@types/react-dom": "^0.14.18",
+    "@types/react-redux": "^4.4.32",
+    "@types/react-router": "^2.0.41",
+    "@types/redux": "^3.6.31",
+    "@types/redux-actions": "^0.8.31",
+    "@types/redux-thunk": "^2.1.31",
+    "@types/socket.io": "^1.4.27",
+    "@types/socket.io-client": "^1.4.27",
+    "@types/superagent": "^2.0.35",
+    "antd": "2.5.2",
+    "axiba": "0.3.19-dev",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "redux-actions": "^0.12.0",
+    "redux-thunk": "^2.1.0",
+    "socket.io-client": "1.5.1",
+    "superagent": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "tslint-config-standard": "^1.5.0"
+  }
+}

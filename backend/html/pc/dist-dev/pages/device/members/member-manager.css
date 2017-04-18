@@ -1,0 +1,97 @@
+.member-title {
+  width: 100%;
+  padding: 0px 25px;
+  line-height: 50px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+}
+.member-title .append-member {
+  margin-left: 20px;
+}
+.member-table {
+  margin-top: 15px;
+}
+.tanchuang {
+  display: none;
+}
+.tanchuang.show {
+  display: block;
+}
+.member-overview {
+  position: fixed;
+  height: 100%;
+  width: 400px;
+  right: 0;
+  top: 65px;
+  background-color: white;
+  display: none;
+  box-shadow: 3 0 0 1px #666;
+}
+.member-overview.visible {
+  display: block;
+}
+.member-overview-title {
+  font-size: 16px;
+  height: 32px;
+  line-height: 31px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+.member-overview h4 {
+  padding-top: 50px;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.member-overview .btn-concern {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.member-overview .btn-close {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+.member-overview-table {
+  width: 100%;
+  line-height: 38px;
+}
+.member-overview-table th {
+  width: 130px;
+  text-align: right;
+  font-weight: 100;
+}
+.member-overview-table td {
+  padding-left: 25px;
+}
+.member-overview-footer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 70px;
+  border-top: 1px solid #d9d9d9;
+  padding: 5px;
+  text-align: right;
+}
+.member-overview-footer .ant-btn {
+  margin-left: 10px;
+}
+.member-overview-close {
+  cursor: pointer;
+  float: right;
+  margin: 7px 7px 0 0;
+}
+.member-details-table {
+  margin: 0 auto;
+}
+.member-details-table .ant-switch {
+  float: right;
+}
+.member-details-table input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.member-select-serach {
+  width: 50%;
+}

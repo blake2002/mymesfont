@@ -1,0 +1,32 @@
+#
+# chkconfig: - 60 15
+mes=/usr/local/lib/python2.7/dist-packages/hite/mes/main.py
+
+
+case $1 in
+    start)
+        echo -n "Starting mes-python"
+        $mes
+        echo " done"
+    ;;
+
+    stop)
+        echo -n "Stopping mes-python"
+        killall -9 hite/main.py
+        echo " done"
+    ;;
+
+    restart)
+        $0 stop
+        $0 start
+    ;;
+
+    show)
+        ps -ef|grep hite/main.py
+    ;;
+
+    *)
+        echo -n "Usage: $0 {start|restart|stop|show}"
+    ;;
+
+esac

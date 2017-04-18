@@ -1,0 +1,36 @@
+.page-model {
+  position: relative;
+}
+.page-model .main-left-content {
+  top: 0px;
+}
+.page-model .main-left-content .ant-input {
+  width: 100%;
+  height: 20px;
+}
+.page-model .main-right-title h3 span {
+  font-size: 12px;
+  color: #999;
+}
+.page-model .ant-tree-title {
+  display: block;
+  width: 100%;
+}
+.page-model .tree-title-text {
+  display: inline-block;
+  width: 100%;
+  padding-left: 18px;
+  margin-left: -18px;
+}
+.page-model .tree-title {
+  width: 100%;
+}
+.page-model .tree-span-click {
+  display: inline-block;
+  width: 100%;
+  padding-left: 18px;
+}
+.page-model .ant-tree-node-content-wrapper {
+  margin-left: -18px;
+  width: 100%;
+}

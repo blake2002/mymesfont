@@ -1,0 +1,124 @@
+@import '../../../components/global/_quick.less';
+.page-deviceadd {
+    position: relative;
+    &.dn {
+        display: none;
+    }
+}
+
+// 添加设备页面
+.page-deviceadd .device-add {
+    &-menu {}
+    &-title {
+        background-color: @background-color-base;
+        padding: 5px 20px;
+        border-radius: 4px;
+    }
+    &-content {
+        .cf-clearfix;
+        margin-left: -12px;
+        margin-top: 10px;
+    }
+    &-box {
+        float: left;
+        width: 290px;
+        height: 220px;
+        padding: 15px 25px;
+        border: 1px solid @border-color-base;
+        border-radius: 6px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        .table-from {
+            width: 100%;
+            margin-top: 55px;
+            margin-bottom: 35px;
+        }
+    }
+    // 通讯参数
+    .comm-param {
+        .cf-clearfix();
+        float: left;
+        height: 220px;
+        position: relative;
+        padding: 15px 25px;
+        border: 1px solid @border-color-base;
+        border-radius: 6px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        &-title {
+            float: left;
+            font-size: 14px;
+            .h-height;
+            margin-right: 70px;
+        }
+        .ant-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .table-from {
+            float: left;
+        }
+    }
+    // 数据块
+    .data-block {
+        float: left;
+        height: 406px;
+        margin-left: 12px;
+        .comm-param-title {
+            position: relative;
+            .btn-del {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+        }
+    }
+}
+
+// 新增设备
+.device-modal {
+    width: 600px;
+    &-content {
+        position: relative;
+        border-top: 1px solid @border-color-base;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+    &-title {
+        position: absolute;
+        font-size: 14px;
+        top: 15px;
+        left: 0px;
+    }
+}
+
+// 添加驱动
+.drive-add {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+// 新增数据快
+.data-block-add {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &-title {
+        position: absolute;
+        font-size: 14px;
+        top: 15px;
+        left: 0px;
+    }
+}
+
+.edit-table {
+    td {
+        max-width: 200px;
+    }
+}
+
+.modal-Content {
+    max-height: 500px;
+    overflow: auto;
+}

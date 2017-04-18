@@ -1,0 +1,54 @@
+[node]
+master = 116.228.98.19
+port = 8001
+
+[product]
+mode = dev
+
+[mq_config]
+stomp = tcp://192.168.10.51:61613
+
+[auth_queue]
+req = /queue/Authorization.Req
+rsp = /queue/Authorization.Response
+
+[alarm_queue]
+req = /queue/Alarm.Req
+rsp = /queue/Alarm.Response
+
+[rtd_queue]
+req = /queue/RTData.Req
+rsp = /queue/RTData.Response
+
+[data_query_queue]
+req = /queue/VarDataQuery.Req
+rsp = /queue/VarDataQuery.Response
+
+[datamodel_queue]
+req = /queue/DataModel.Req
+rsp = /queue/DataModel.Response
+
+[manager_queue]
+req = /queue/DeviceManager.Req
+rsp = /queue/DeviceManager.Response
+
+[redis]
+db = 0
+host = 192.168.10.52
+port = 6379
+
+[session_timeout]
+timeout = 10080
+
+[logger]
+level = DEBUG
+dir = /var/log/fuanda/hite
+
+[usr_dir]
+dir = /var/www/html/
+
+[project_dir]
+dir = /netscada/fuanda/VersionFolder/
+
+[white_list]
+usrs = 13611911577,

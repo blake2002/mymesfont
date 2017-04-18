@@ -1,0 +1,36 @@
+.page-device-seach .seach-dl {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+.page-device-seach .seach-dl dt {
+  padding: 0 10px;
+}
+.page-device-seach .seach-dl dd {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-top: 1px solid #d9d9d9;
+}
+.page-device-seach .seach-dl dd .td-span {
+  margin-right: 20px;
+}
+.page-device-seach .region-box {
+  float: left;
+  width: 340px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+}
+.page-device-seach .device-box {
+  margin-left: 360px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+}
+.page-device-seach .seach-box {
+  height: 100%;
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+}
